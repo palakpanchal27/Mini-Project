@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Piedra&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>Trends</h1>
+            </div>
+            <ul>
+                <li>
+                    <a id="home" onclick="home()">Home</a>
+                    <a id="shop" onclick="shop()">Shops</a>
+                    <a id="blog" onclick="blog()">Blog</a>
+                    <a id="about" onclick=" about()">About</a>
+                    <a id="contact" onclick="contact()">Contact</a>
+                    <i onclick="addItem()" class="fa-sharp fa-solid fa-cart-shopping"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mainPage">
+            <div class="text">
+                <h2>Trends...</h2>
+                <h1 class="heads">Super Value Deals</h1>
+                <h1>On All Products</h1>
+                <p>Preminum Brands,Preminum Savings</p>
+                <a href="https://reliancetrends.com/">
+                <button>Explore</button>
+                </a>
+            </div>
+            <img src="img\lgr1.png" alt="" width="500" height="500">
+        </div>
+
+
+
+        <div class="cardMen">
+            <div class="head">
+                <h1>Trends <span>Men's Wear</span></h1>
+            </div>
+            <div class="card" id="item1">
+                <div class="crd">
+                    <img src="img\srt1.webp" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Cutton Trending Shirt's</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button onclick="add(item1)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="img\srt2.webp" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Cutton Trending Shirt's</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="img\srt6.webp" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Cutton Trending Shirt's</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cardgirl">
+            <div class="head">
+                <h1>Trends <span>Women's Wear</span></h1>
+            </div>
+
+            <div class="card">
+                <div class="crd">
+                    <img src="img\wn6.webp" alt="" onclick="showCard(this) ">
+                    <div class="txt">
+                        <h3>Trending Girl Tops</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="img\wn4.webp" alt="" onclick="showCard(this) " >
+                    
+                    <div class="txt">
+                        <h3>Trending Girl Tops</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="crd">
+                    <img src="img\jeans.png" alt="" onclick="showCard(this) ">
+                    <div class="txt">
+                        <h3>Trending Girl Jeans</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="crd">
+                    <img src="img\beige.jpg" alt="" onclick="showCard(this) ">
+                    <div class="txt">
+                        <h3>Trending Girl Jumpsuit's</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="img\wn5.webp" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Trending Girl Tops</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    
+     
+        
+
+
+
+
+        
+
+        <!--Full cart  -->
+        <div class="fullPage">
+            <img id="cartImg" src=" " alt="">
+            <div class="cartText">
+                <h1>Trends Offer : Trending Shop <br> Now</h1>
+                <h2>Special Price</h2>
+                <h2>₹1110</h2>
+                <p></p>
+                <p></p>
+                <p></p>
+                <div class="sizeSelector">
+                    <h3>Select Size:</h3>
+                    <div id="sizes">
+                        <button onclick="selectSize('XS')">XS</button>
+                        <button onclick="selectSize('S')">S</button>
+                        <button onclick="selectSize('M')">M</button>
+                        <button onclick="selectSize('L')">L</button>
+                        <button onclick="selectSize('XL')">XL</button>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button onclick="buyNow()">Buy Now</button>
+                    <button onclick="addToCart()">Add To Cart</button>
+
+
+                    
+                </div>
+                <div class="btns">
+                    <button class="relode" onclick="location.reload()">Back </button>
+                </div>
+            </div>
+            
+
+        </div>
+
+
+
+
+        <!-- Payment Page (Initially Hidden) -->
+    <div id="paymentPage" class="paymentPage" style="display: none;">
+        <h1>Payment Details</h1>
+        <p>Please fill out your details to complete the purchase.</p>
+        
+        <form class="paymentForm" onsubmit="completePayment(event)">
+            <div class="formGroup">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="formGroup">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="formGroup">
+                <label for="address">Shipping Address:</label>
+                <input type="text" id="address" placeholder="Enter your address" required>
+            </div>
+            
+            <div class="formGroup">
+                <label for="card">Card Details:</label>
+                <input type="text" id="card" placeholder="1111-2222-3333-4444" required>
+            </div>
+            
+            <button type="submit" class="submitBtn">Complete Payment</button>
+        </form>
+    </div>
+
+
+
+
+
+
+        
+
+        <!-- add to cart -->
+        <div class="addCart">
+
+        </div>
+
+        <div class="blogContent">
+            <div class="head">
+                <h1>Trends Top <span>Blog's</span></h1>
+            </div>
+
+            <div class="trd">
+                <div class="trending">
+                    <img src="img\tr1.webp" alt="">
+                    <div class="txt">
+                        <h3>Trending Girl Cloths</h3><br>
+                        <p>20 Trendiest Fashion Blogs to Follow in 2025</p><br>
+                        <a href="https://influencermarketinghub.com/best-fashion-blogs/">Read More</a>
+                    </div>
+                </div>
+                <div class="trending">
+                    <img src="img\tr3.webp" alt="">
+                    <div class="txt">
+                        <h3>Trending Boys Cloths</h3> <br>
+                        <p>20 Trendiest Fashion Blogs to Follow in 2025</p><br>
+                        <a href="https://www.apetogentleman.com/">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="aboutText">
+                <h1>#Know Us...</h1>
+                <p>Dress is Happiness...</p>
+            </div>
+
+            <div class="aboutus">
+                <img src="img\lap.png" alt="">
+                <div class="dumiText">
+                    <h1>Who we are ?</h1>
+                    <p>We're Trends, a group of creatives from Mumbai, India, who believe in the existence of happiness.
+                        More than a brand, we've been creating enlightened cultural movements since 2024. We embody the 
+                        liveliness of a nature-infused and culturally rich lifestyle-coloring the world one print at a time.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div class="contact">
+            <div class="contactBanner">
+                <h1>#Let's Connect</h1>
+                <p>If you are a customer, we will follow up with a special offer!</p>
+
+            </div>
+            <div class="connect">
+                <div class="connectText">
+                    <h1>Visit Our Office or Contact <br> Us Today</h1>
+                    <p>Address :TRENDS, Infiniti Mall, Mumbai, LG-001/A, Infiniti Mall, New Link Road, Mumbai, Maharashtra</p>
+                    <p>Contact : Trends@gmail.com</p>
+                    <p>Number : 999999000011</p>
+                </div>
+                <img src="img\map.jpg" alt="">
+            </div>
+
+            <div class="form">
+                <h1>Connect with Us. Fill Form</h1>
+                <input type="text" placeholder="Enter Your FirstName"> <br>
+                <input type="text" placeholder="Enter Your LsstName"> <br>
+                <input type="text" placeholder="Enter Your Email"><br>
+                <input type="text" placeholder="Enter Your Number"><br>
+                <input type="text" placeholder="Enter Your Address"><br>
+                <button>Submit</button>
+
+            </div>
+        </div>
+
+        <div class="letter">
+            <div class="sign">
+                <h2>Sign Up for NewsLetter</h2>
+                <p>If you are a customer, we will follow up with a special offer!</p>
+            </div>
+            <div class="inp">
+                <form id="signUpForm">
+                    <input 
+                        type="email" 
+                        id="email" 
+                        placeholder="Enter Email Address" 
+                        required 
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                        title="Please enter a valid email address. Example: user@example.com"
+                    >
+                
+                <button onclick="handleSignUp()">Sign Up</button>
+            </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+<!-- Full Page Section -->
+<div class="fullPage">
+    <!-- Buy Now Button -->
+    <div class="btn">
+        <button onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart()">Add To Cart</button>
+    </div>
+</div>
+
+<!-- Payment Page (Initially Hidden) -->
+<div id="paymentPage" class="paymentPage" style="display: none;">
+    <h1>Payment Details</h1>
+    <p>Please fill out your details to complete the purchase.</p>
+    
+    <!-- Display Product Information -->
+    <div id="selectedProductInfo">
+        <!-- The product image, name, and price will be injected here -->
+    </div>
+    
+    <form class="paymentForm" onsubmit="completePayment(event)">
+        <div class="formGroup">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+        </div>
+        
+        <div class="formGroup">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="formGroup">
+            <label for="address">Shipping Address:</label>
+            <input type="text" id="address" placeholder="Enter your address" required>
+        </div>
+        
+        <div class="formGroup">
+            <label for="card">Card Details:</label>
+            <input type="text" id="card" placeholder="1111-2222-3333-4444" required>
+        </div>
+        
+        <button type="submit" class="submitBtn">Complete Payment</button>
+    </form>
+</div>
+
+
+
+
+
+        
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="Ftext">
+                <h1>Trends</h1>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfation</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>About US</h3>
+                <p>Adrress : TRENDS, Infiniti Mall, Mumbai, <br> LG-001/A, Infiniti Mall, <br> Mumbai, Maharashtra.
+                </p>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfation</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>Contect</h3>
+                <p>1234567890</p>
+                <p>Customer</p>
+                <p>Comming up..</p>
+                <p>New Arrival</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>Trending</h3>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>SHops</p>
+                <p></p>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
